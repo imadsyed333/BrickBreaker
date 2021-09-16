@@ -53,9 +53,7 @@ public class Gameplay extends JPanel implements MouseMotionListener, ActionListe
     public void actionPerformed(ActionEvent e) {
         if (play) {
             ballMovement();
-            paddle.moveX(ball.x);
             repaint();
-
             if(bricks.size() == 0) {
                 play = false;
             }
